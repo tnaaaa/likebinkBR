@@ -1,0 +1,153 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --primary: #4ade80;
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+    --danger: #f87171;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding-bottom: 40px;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.stat-box {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.stat-row {
+    display: flex;
+    gap: 12px;
+}
+
+.stat-row .stat-box {
+    flex: 1;
+    padding: 15px;
+}
+
+.label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.positive { color: var(--primary); }
+.negative { color: var(--danger); }
+
+.chart-container {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.add-session, .history {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.add-session h3, .history h3 {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #2a2a2a;
+    color: white;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: var(--primary);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.session-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+}
+.session-item:last-child {
+    border-bottom: none;
+}
+.session-info {
+    display: flex;
+    flex-direction: column;
+}
+.session-date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+.session-profit {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
