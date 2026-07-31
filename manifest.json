@@ -1,5 +1,5 @@
 {
-  "name": "Bink Clone Tracker",
+  "name": "Bankroll Tracker (Bink Clone)",
   "short_name": "Bankroll",
   "start_url": "./index.html",
   "display": "standalone",
@@ -8,12 +8,12 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://via.placeholder.com/192x192.png?text=B",
+      "src": "https://via.placeholder.com/192x192/34c759/ffffff.png?text=B",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://via.placeholder.com/512x512.png?text=B",
+      "src": "https://via.placeholder.com/512x512/34c759/ffffff.png?text=B",
       "sizes": "512x512",
       "type": "image/png"
     }
